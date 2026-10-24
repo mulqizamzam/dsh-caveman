@@ -22,7 +22,7 @@ test('skills retain essential engineering and communication workflows', () => {
     'caveman', 'ultracave', 'megacave', 'caveman-review', 'caveman-commit',
     'investigate-first', 'lean-build', 'migration', 'safe-refactor',
     'surgical-patch', 'verify-and-stop', 'caveman-help',
-  ]) assert.ok(names.has(required), \`missing \${required}\`)
+  ]) assert.ok(names.has(required), 'missing ' + required)
 })
 
 test('apply registers every skill and refuses a context without the DSH registry', () => {
