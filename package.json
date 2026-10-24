@@ -1,0 +1,22 @@
+{
+  "name": "dsh-caveman",
+  "version": "0.2.1-rc.2",
+  "description": "A DeepSeek Harness bundle that adds concise, accuracy-preserving response and engineering workflow skills.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["index.js", "cordis.patch.yml", "assets/icon.svg", "README.md", "INSTALL_DSH.md", "LICENSE", "NOTICE"],
+  "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "https://github.com/mulqizamzam/dsh-caveman.git" },
+  "homepage": "https://github.com/mulqizamzam/dsh-caveman#readme",
+  "bugs": { "url": "https://github.com/mulqizamzam/dsh-caveman/issues" },
+  "icon": "./assets/icon.svg",
+  "engines": { "node": "^22.19.0 || >=24.0.0", "dsh": ">=0.2.1-rc.2 <0.2.2" },
+  "peerDependencies": { "@deepseek-ai/cordis": "4.0.5", "@deepseek-ai/dsh-skill": "0.2.1-rc.2" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": { "test": "node --test tests/*.spec.mjs", "validate": "python3 scripts/validate.py" }
+}

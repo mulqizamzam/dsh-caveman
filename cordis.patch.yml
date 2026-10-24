@@ -1,0 +1,6 @@
+# Add the Caveman skill set to a DSH profile. The profile's base bundle
+# provides @deepseek-ai/dsh-skill; no existing base rows are replaced.
+- insert:
+    - id: dsh-caveman
+      name: 'dsh-caveman'
+      disabled: false

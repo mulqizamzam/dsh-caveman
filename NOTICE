@@ -1,0 +1,10 @@
+DSH Caveman
+
+This project is a skills-first port of selected response-style and engineering workflow instructions inspired by:
+  JuliusBrussee/caveman — https://github.com/JuliusBrussee/caveman
+  Source inspected: main branch, 2026-10-24
+  Upstream repository license: Apache-2.0
+
+This repository does not redistribute the upstream Caveman CLI, Go engine, proxy, binary releases, runtime implementation, telemetry, or cloud service. It is an independent DSH bundle, not an official release of Caveman or DeepSeek Harness.
+
+DeepSeek Harness is maintained at https://github.com/deepseek-ai/deepseek-harness. DSH itself is not bundled here. Product and organization names remain the property of their respective owners.
