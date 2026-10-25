@@ -1,6 +1,9 @@
 /** Portable DSH skill bundle. No proxy, network calls, telemetry, or model mutation. */
 export const name = 'dsh-caveman'
 
+/** Cordis services required by apply(). */
+export const inject = ['skills']
+
 const entry = (name, description, lines) => ({ name, description, content: lines.join('\n') })
 
 export const skills = [
