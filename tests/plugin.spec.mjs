@@ -15,6 +15,7 @@ test('plugin exposes DSH-compatible name and a non-empty unique skill catalogue'
   for (const skill of skills) {
     assert.match(skill.name, kebab)
     assert.ok(skill.description.trim().length >= 15)
+    assert.equal(typeof skill.source, 'string', `skill ${skill.name} must declare its source`)
     assert.ok(skill.content.trim().length >= 100)
   }
 })
