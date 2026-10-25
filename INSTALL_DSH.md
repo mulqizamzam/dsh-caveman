@@ -21,6 +21,16 @@ dsh --version
 dsh plugin --profile web add https://github.com/mulqizamzam/dsh-caveman
 ```
 
+### Update an existing installation
+
+If `dsh-caveman` is already installed, adding the repository again may leave the lockfile-pinned Git revision unchanged. Update the installed dependency explicitly, then restart the profile:
+
+```bash
+dsh plugin --profile web update dsh-caveman
+```
+
+The fixed bundle release is `0.2.1-rc.3` and declares `export const inject = ['skills']`. To verify the installed source, check `node_modules/dsh-caveman/index.js` contains that declaration near the top. If it does not, the profile is still using an older checkout.
+
 The package declares `dsh.bundle.patch`; DSH's profile plugin manager installs the Git-hosted bundle and inserts its plugin row. Review the source and compatibility shown by DSH before confirming. If your build uses the Plugins UI, use its install/add-bundle flow with the same repository URL.
 
 ## Try a skill
