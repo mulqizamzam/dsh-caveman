@@ -17,7 +17,7 @@ except Exception as exc:
     print(f"FAIL: package.json: {exc}")
     sys.exit(1)
 checks = {
-    "version": pkg.get("version") == "0.2.1-rc.3",
+    "version": pkg.get("version") == "0.2.1-rc.4",
     "engine target": pkg.get("engines", {}).get("dsh") == ">=0.2.1-rc.2 <0.2.2",
     "bundle patch declaration": pkg.get("dsh", {}).get("bundle", {}).get("patch") == "./cordis.patch.yml",
     "license": pkg.get("license") == "Apache-2.0",
