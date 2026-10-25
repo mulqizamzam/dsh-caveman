@@ -4,7 +4,7 @@ export const name = 'dsh-caveman'
 /** Cordis services required by apply(). */
 export const inject = ['skills']
 
-const entry = (name, description, lines) => ({ name, description, content: lines.join('\n') })
+const entry = (name, description, lines) => ({ name, description, source: 'runtime', content: lines.join('\n') })
 
 export const skills = [
   entry('caveman', 'Use concise, answer-first communication without losing technical facts, qualifications, or negations.', [
