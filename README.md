@@ -1,6 +1,6 @@
 # DSH Caveman
 
-**DSH bundle `0.2.1-rc.3` · targets DeepSeek Harness `0.2.1-rc.2`**
+**DSH bundle `0.2.1-rc.4` · targets DeepSeek Harness `0.2.1-rc.2`**
 
 A beginner-friendly, skills-first port of reusable Caveman response-style and engineering workflows for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). It contributes 12 DSH Skills for concise communication, evidence-led code review, commit-message drafting, debugging, bounded feature work, refactoring, migrations, focused fixes, and verification.
 
