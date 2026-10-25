@@ -29,7 +29,7 @@ If `dsh-caveman` is already installed, adding the repository again may leave the
 dsh plugin --profile web update dsh-caveman
 ```
 
-The fixed bundle release is `0.2.1-rc.3` and declares `export const inject = ['skills']`. To verify the installed source, check `node_modules/dsh-caveman/index.js` contains that declaration near the top. If it does not, the profile is still using an older checkout.
+The current bundle release is `0.2.1-rc.4`; each embedded skill declares `source: 'runtime'`, and the plugin declares `export const inject = ['skills']`. To verify the installed source, check `node_modules/dsh-caveman/index.js` contains that declaration near the top. If it does not, the profile is still using an older checkout.
 
 The package declares `dsh.bundle.patch`; DSH's profile plugin manager installs the Git-hosted bundle and inserts its plugin row. Review the source and compatibility shown by DSH before confirming. If your build uses the Plugins UI, use its install/add-bundle flow with the same repository URL.
 
