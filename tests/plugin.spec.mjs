@@ -1,11 +1,12 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { apply, name, skills } from '../index.js'
+import { apply, inject, name, skills } from '../index.js'
 
 const kebab = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 
 test('plugin exposes DSH-compatible name and a non-empty unique skill catalogue', () => {
   assert.equal(name, 'dsh-caveman')
+  assert.deepEqual(inject, ['skills'], 'Cordis must inject the Skill Registry before apply() reads ctx.skills')
   assert.ok(skills.length >= 10)
   const names = skills.map(skill => skill.name)
   assert.equal(new Set(names).size, names.length)
