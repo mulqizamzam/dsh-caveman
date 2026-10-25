@@ -4,7 +4,7 @@ from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED, ZipInfo
 import hashlib, sys
 root = Path(__file__).resolve().parents[1]
-out = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else root.parent / 'dsh-caveman-0.2.1-rc.3.zip'
+out = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else root.parent / 'dsh-caveman-0.2.1-rc.4.zip'
 files = sorted(p for p in root.rglob('*') if p.is_file() and not p.is_symlink() and '__pycache__' not in p.parts and p.suffix not in {'.pyc', '.pyo'})
 with ZipFile(out, 'w') as archive:
     for p in files:
